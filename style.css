@@ -103,6 +103,9 @@ label {
 }
 
 /* Heading elem */
+.title h1 {
+  text-align: center;
+}
 .title > h1,
 h2 {
   width: 80%;
