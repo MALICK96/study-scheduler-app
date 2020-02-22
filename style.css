@@ -1,0 +1,221 @@
+* {
+  box-sizing: border-box;
+}
+
+/* container style */
+.container {
+  max-width: 950px;
+  min-width: 600px;
+  margin: 80px auto;
+  padding: 20px;
+  background-color: #5a8da1;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.4;
+  box-shadow: 3px 4px 4px rgb(10, 10, 10, 0.5);
+}
+
+/* input stles */
+
+input[type="text"] {
+  padding: 5px 5px;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  padding: 12px 15px;
+  background-color: rgb(189, 65, 189);
+  color: white;
+  margin-top: 8px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  float: right;
+  transition: color 2s, background-color 2s;
+}
+
+/* input type submit style */
+input[type="submit"]:hover {
+  background-color: rgba(165, 42, 99, 0.5);
+  color: #000;
+}
+
+label {
+  display: inline-block;
+  padding: 12px 12px 0;
+}
+
+/* elm with id date style */
+#date {
+  display: inline-block;
+  padding: 5px;
+  background-color: red;
+  font-size: 0.95rem;
+}
+
+.container > .title + p {
+  font-size: 1.2rem;
+  background-color: rgb(189, 189, 19);
+  max-width: 850px;
+  width: 80%;
+  margin: 20px auto;
+}
+
+/* The span elm inside p */
+.container > .title + p span {
+  text-decoration: underline;
+  color: #f00;
+}
+
+/* .row style */
+.row {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Style for lablels with .col-25 */
+
+.col-25 {
+  width: 30%;
+  margin-top: 6px;
+  float: left;
+}
+
+/* Style for the input element with .col-75 */
+
+.col-75 {
+  width: 70%;
+  margin-top: 10px;
+  float: left;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Heading elem */
+.title > h1,
+h2 {
+  width: 80%;
+  margin: 20px auto;
+}
+
+.title h1 {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+}
+
+/* Show result elem style */
+.showRes {
+  width: 60%;
+  padding: 20px;
+  margin: 20px auto;
+}
+
+/* h2 inside show res */
+.showRes h2 {
+  color: rgb(23, 44, 160);
+  font-weight: 500;
+}
+
+/* Style for the table */
+table,
+th,
+td {
+  border: 1px solid #000;
+  border-collapse: collapse;
+  padding: 15px;
+  vertical-align: center;
+}
+
+table,
+th,
+td {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+table {
+  width: 80%;
+  margin: 15px auto;
+  padding: 15px;
+  border-collapse: collapse;
+  text-align: center;
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+}
+
+tr:nth-child(even) {
+  background-color: #ddd;
+}
+
+tr:nth-child(odd) {
+  background-color: aliceblue;
+}
+
+/* Last row */
+.row:last-of-type {
+  position: relative;
+}
+/* Credit section */
+.credit {
+  width: 40%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+}
+
+.credit em {
+  font-size: 1.2rem;
+  padding: 2px;
+  text-transform: capitalize;
+}
+/* For tablet and mobile screen sizes*/
+@media screen and (max-width: 700px) {
+  /* heading */
+  .title h1,
+  h2 {
+    text-align: center;
+  }
+
+  /* Style for the 2 columns ang
+  submit input btn */
+  .col-25,
+  .col-75,
+  input[type="submit"] {
+    width: 100%;
+    margin-top: 0px;
+  }
+
+  input[type="submit"] {
+    margin-top: 10px;
+  }
+
+  /* Style for the .col-25 box */
+  .col-25 {
+    text-align: center;
+    padding-bottom: 15px;
+  }
+
+  /* Credit Section */
+
+  .credit {
+    width: 80%;
+    position: static;
+    margin: 10px auto;
+  }
+
+  .credit em {
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>StudyTimeScheduler App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">
+        <h1>Study Schedule App</h1>
+        <h2>Today is: <span id="date"> </span></h2>
+        <form id="form" action="" method="POST">
+          <div class="row">
+            <div class="col-25">
+              <label for="coursename">Course Name </label>
+            </div>
+            <div class="col-75">
+              <input
+                type="text"
+                id="coursename"
+                name="coursename"
+                placeholder="enter course name"
+              />
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-25">
+              <label for="coursetime">Time </label>
+            </div>
+            <div class="col-75">
+              <input
+                type="text"
+                id="coursetime"
+                name="time"
+                placeholder="enter course time"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="teacher">teacher Name (optional)</label>
+            </div>
+            <div class="col-75">
+              <input
+                type="text"
+                id="teacher"
+                name="teacher"
+                placeholder="enter teacher name"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <input type="submit" value="Save" />
+          </div>
+        </form>
+      </div>
+
+      <p>
+        <span>Note</span>: After Submitting the form you'll see your output
+        below:
+      </p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Couse Name</th>
+            <th>Couse Time</th>
+            <th>Teacher Name</th>
+          </tr>
+        </thead>
+
+        <tbody id="tablebody"></tbody>
+      </table>
+      <div class="showRes">
+        <h2>Today Lecture Details</h2>
+        <span id="res"> </span>
+      </div>
+
+      <!-- Author name -->
+      <div class="row">
+        <div class="credit">Developed by <em>Abdul Malick Diakite</em></div>
+      </div>
+    </div>
+    <script src="shedule-app01.js"></script>
+  </body>
+</html>
