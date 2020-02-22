@@ -103,9 +103,6 @@ label {
 }
 
 /* Heading elem */
-.title h1 {
-  text-align: center;
-}
 .title > h1,
 h2 {
   width: 80%;
@@ -116,6 +113,7 @@ h2 {
   font-size: 1.8rem;
   text-transform: uppercase;
   letter-spacing: 0.15rem;
+  text-align: center;
 }
 
 /* Show result elem style */
