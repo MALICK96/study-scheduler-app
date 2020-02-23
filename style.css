@@ -1,4 +1,6 @@
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -14,6 +16,7 @@
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.4;
   box-shadow: 3px 4px 4px rgb(10, 10, 10, 0.5);
+  position: relative;
 }
 
 /* input stles */
@@ -103,6 +106,22 @@ label {
   clear: both;
 }
 
+/* Main Title which house the form  */
+.title {
+  /* max-width: 80px; */
+  width: 80%;
+  margin: auto;
+}
+
+.content-wrapper {
+  width: 80%;
+  margin: auto;
+}
+
+.content-wrapper p {
+  width: 80%;
+  margin: auto;
+}
 /* Heading elem */
 .title > h1,
 h2 {
@@ -118,16 +137,22 @@ h2 {
 }
 
 /* Show result elem style */
-.showRes {
+/* .showRes {
   width: 60%;
   padding: 20px;
   margin: 20px auto;
-}
+} */
 
 /* h2 inside show res */
 .showRes h2 {
   color: rgb(23, 44, 160);
   font-weight: 500;
+}
+
+#res {
+  display: block;
+  width: 80%;
+  margin: 10px auto;
 }
 
 /* Style for the table */
@@ -180,6 +205,8 @@ tr:nth-last-of-type(even):hover {
   position: relative;
 }
 
+/* Author box style */
+
 /* Credit section */
 .credit {
   width: 40%;
@@ -197,6 +224,10 @@ tr:nth-last-of-type(even):hover {
 
 /* For tablet and mobile screen sizes*/
 @media screen and (max-width: 700px) {
+  /* title */
+  .title {
+    width: 100%;
+  }
   /* heading */
   .title h1,
   h2 {
